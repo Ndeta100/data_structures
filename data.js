@@ -125,6 +125,17 @@ while(array1Item || array2Item){
 }
 console.log(mergeSortedArrays([1,2,3,4,5], [30,4,56,7]))
 
+// HASH TABLES
+let user={
+    age:54,
+    name:'ndeta',
+    magic:true,
+    scream:function(){
+        console.log('ahhhhhhhh')
+    }
+}
+user.age //0(1)
+user.spell='abrak da aba' //0(1)
 
 
 
