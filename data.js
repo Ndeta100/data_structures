@@ -27,7 +27,7 @@ strings.unshift('o') //O(n)
 
 // splice
 strings.splice(2,0, 'alien') //O(n)
-
+console.log(strings)
 //BUILDING AN ARRAY
 class MyArray{
     constructor(){
@@ -69,12 +69,34 @@ newArray.push('0')
 newArray.pop()
 console.log(newArray)
 
+// Create a function that reverse a string:
+//'Hi My name is ndeta  in reverse order
+function reverse(str){
+  //check input
+  if(!str || str.length<2 || typeof str !=='string')  return 'that not good'
+  const backwards=[]
+  const totalItem=str.length-1
+  for(let i=totalItem; i>=0; i--){
+    backwards.push(str[i])
+  }
+  console.log(backwards)
+  return backwards.join('')
+}
+reverse('Hi My name is ndeta ')
+
+// Another solution
+function reverse2(str){
+    return str.split('').reverse().join()
+}
+
+// Another solution
+ const reverse3=str=>str.split('').join()
+
+
+//  [0,1,2,3,4,5,30,4,56,7] git this array to be merge sorted
 
 
 
 
 
 
-
-
-console.log(strings)
