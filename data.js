@@ -172,11 +172,21 @@ class HashTable{
          return undefined
        }
     }
+    keys(){
+        const keysArray=[]
+        for(let i=o;i<this.data.length; i++){
+            if(this.data[i]){
+                keysArray.push(this.data[i][0])
+            }
+        }
+        return keysArray
+    }
     
 }
 
 const myHashTable=new HashTable(50)
 myHashTable.set('grape', 10000)
-// myHashTable.get('grapes')
+myHashTable.get('grapes')
+myHashTable.keys()
 
 
